@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <title>Password generator</title>
+    </head>
+    <body>
+
+        <div id="main">
+            <div id="panel">
+                <div class="top">
+                    Password generator
+                </div>
+                <div class="middle">
+                    Your new password:
+                    <input type="text" id="newpassword" value="Tester" maxlength="0">
+                    <button id="copy">
+                        <img src="/img/copy.svg" alt="copy">
+                    </button>
+                </div>
+                <div class="bottom">
+                    <div class="left">
+                        <div class="checkbox-list">
+                            <div class="option">
+                                <label for="special">special characters</label>
+                                <input type="checkbox" id="special" name="special">
+                            </div>
+                            <div class="option">
+                                <label for="numbers">numbers</label>
+                                <input type="checkbox" id="numbers" name="numbers">
+                            </div>
+                            <div class="option">
+                                <label for="uppercase">uppercase</label>
+                                <input type="checkbox" id="uppercase" name="uppercase">
+                            </div>
+                            <div class="option">
+                                <label for="lowercase">lowercase</label>
+                                <input type="checkbox" id="lowercase" name="lowercase">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="size-picker">
+                            <label for="size" id="size-text">size (15):</label>
+                            <input name="size" type="range" id="size" min="5" max="50" readonly>
+                        </div>
+
+                        <div class="confirm">
+                            <button id="generate">
+                                Generate
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="/js/main.js"></script>
+    </body>
+</html>
